@@ -1,0 +1,59 @@
+CNPJ;Bairro;CEP;CodigoEmpresa;CodigoPais;CodigoERP;Complemento;GeraASN;Logradouro;Tipo;Municipio;Numero;Pais;RazaoSocial
+57012098000467;Campo Grande;23.036-150;Translute;BR;;;Não;Estrada do Mato Alto;Transportadora;Rio de Janeiro;86;Brasil;Translute Transportes Rodoviários
+03327988000439;Zona Rural;79.301-000;VALE;BR;61276;;Não;Rodovia Morraria de Santa Cruz;CNPJ Vale;Corumbá;S/N;Brasil;Mineração Corumbaense Reunida S.A.
+03327988000196;Zona Rural;79.301-970;VALE;BR;6590355;;Não;Rodovia Morro do Urucum;CNPJ Vale;Corumbá;S/N;Brasil;Mineração Corumbaense Reunida S.A.
+03327988000358;Porto Esperança;79.321-600;VALE;BR;10887864;;Não;Porto Gregório Curvo;CNPJ Vale;Corumbá;S/N;Brasil;Mineração Corumbaense Reunida S.A.
+33592510002106;Parque Industrial;29.090-900;VALE;BR;91782;Ponta de Tubarão;Sim;Avenida Dante Michelini;CNPJ Vale;Vitória;5500;Brasil;Vale S.A.
+33592510016409;Zona Rural;35.901-190;VALE;BR;91791;;Sim;Serra do Esmeril;CNPJ Vale;Itabira;S/N;Brasil;Vale S.A.
+33592510043805;Manoel Plaza;29.160-415;VALE;BR;91803;;Sim;Avenida Norte Sul;CNPJ Vale;Serra;1494;Brasil;Vale S.A.
+33592510042078;;;VALE;BR;175530;;Sim;Fazenda Brasileiro;CNPJ Vale;Teofilândia;S/N;Brasil;Vale S.A. Mina de Ouro Fazenda Brasileiro
+33592510037821;Itaqui;65.085-582;VALE;BR;176372;;Sim;Avenida Dos Portugueses;CNPJ Vale;São Luís;S/N;Brasil;Vale S.A.
+33592510044364;Campo Santa Bárbara;49.760-000;VALE;BR;176436;;Sim;Rodovia SE-206, Km 0;CNPJ Vale;Rosário do Catete;S/N;Brasil;Vale S.A.
+33592510037074;;68.516-000;VALE;BR;176639;Mina de Ferro;Sim;Estrada Raymundo Mascarenhas;CNPJ Vale;Parauapebas;S/N;Brasil;Vale S.A. Carajás
+33592510042400;Itaqui;65.085-582;VALE;BR;176743;;Sim;Avenida dos Portugueses;CNPJ Vale;São Luís;S/N;Brasil;Vale S.A.
+33592510043392;Zona Rural;35.970-000;VALE;BR;177199;;Sim;Fazenda Congo Soco;CNPJ Vale;Barão de Cocais;S/N;Brasil;Vale S.A. Mina de Congo Soco
+33592510041349;Zona Rural;35.940-000;VALE;BR;259741;;Sim;Mina de Morro Agudo;CNPJ Vale;Rio Piracicaba;S/N;Brasil;Vale S.A. Mina de Morro Agudo
+33592510040105;Timbopeba;35.400-000;VALE;BR;361914;;Sim;Estrada de Ferro Vitória Minas, Km 613;CNPJ Vale;Ouro Preto;S/N;Brasil;Vale S.A.
+33592510031548;Centro;35.010-330;VALE;BR;469044;;Sim;Praça João Paulo Pinheiro;CNPJ Vale;Governador Valadares;S/N;Brasil;Vale S.A.
+33592510043473;Itaqui;65.085-582;VALE;BR;837821;Praia do Boqueirão;Sim;Avenida dos Portugueses;CNPJ Vale;São Luís;S/N;Brasil;Vale S.A.
+33592510000740;Miguel Burnier;35.400-000;VALE;BR;890550;Mina Fábrica;Sim;Rodovia BR-040 Km 598;CNPJ Vale;Ouro Preto;S/N;Brasil;Vale S.A.
+33592510000820;Alberto Flores;35.460-000;VALE;BR;890816;;Sim;Fazenda Córrego do Feijão;CNPJ Vale;Brumadinho;S/N;Brasil;Vale S.A.
+33592510041268;Zona Rural;35.420-000;VALE;BR;960159;;Sim;Mina da Alegria;CNPJ Vale;Mariana;S/N;Brasil;Vale S.A.
+33592510022042;Parque Industrial;29.090-900;VALE;BR;1063118;Ponta de Tubarão;Sim;Avenida Dante Michelini;CNPJ Vale;Vitória;5500;Brasil;Vale S.A.
+33592510042663;Interior;68.508-970;VALE;BR;1089481;;Sim;Pat de Cruzamento de Marabá, Km 738 da Estrada de Ferro Carajás;CNPJ Vale;Marabá;S/N;Brasil;Vale S.A.
+33592510042582;;34.505-970;VALE;BR;1146618;;Sim;Córrego do Meio;CNPJ Vale;Sabará;S/N;Brasil;Vale S.A. Córrego do Meio
+33592510000901;Vila do Sossego;68.537-000;VALE;BR;2197290;;Sim;Vila do Sossego;CNPJ Vale;Canaã dos Carajás;S/N;Brasil;Vale S.A.
+33592510044798;Zona Rural;35.935-000;VALE;BR;3019831;;Sim;Serra do Machado;CNPJ Vale;São Gonçalo do Rio Abaixo;S/N;Brasil;Vale S.A.
+33592510001550;;;VALE;BR;3105271;;Sim;Est. Mineração BR-10, KM 30;CNPJ Vale;Paragominas;S/N;Brasil;Vale S.A.
+33592510004494;Pico;35.450-000;VALE;BR;3418824;;Sim;Fazenda Cata Branca;CNPJ Vale;Itabirito;S/N;Brasil;Vale S.A.
+33592510003501;Área Rural;34.019-899;VALE;BR;3419000;;Sim;Fazenda da Mutuca;CNPJ Vale;Nova Lima;S/N;Brasil;Vale S.A.
+33592510003412;Área Rural;34.019-899;VALE;BR;3419333;;Sim;Fazenda Rio de Peixe;CNPJ Vale;Nova Lima;S/N;Brasil;Vale S.A.
+33592510020341;;;VALE;BR;3460889;;Sim;Mina do Andrade;CNPJ Vale;Bela Vista de Minas;S/N;Brasil;Vale S.A.
+33592510005547;Centro;23.860-000;VALE;BR;74308;;Sim;Outros Praia Leste - Ilha Guaíba;CNPJ Vale;Mangaratiba;S/N;Brasil;Vale S.A.
+33592510007590;Zona Rural;68.390-000;VALE;BR;4450594;;Sim;Estrada Vicinal Picadão, Km 22;CNPJ Vale;Ourilândia do Norte;S/N;Brasil;Vale S.A.
+33592510015933;Desembargador Drumond;35.920-000;VALE;BR;4664699;;Sim;Pto da Estação;CNPJ Vale;Nova Era;S/N;Brasil;Vale S.A.
+33592510028245;Piraqueassu;29.680-000;VALE;BR;5219271;;Sim;Rodovia BR-101, Km 199;CNPJ Vale;João Neiva;S/N;Brasil;Vale S.A.
+33592510026200;Parque Industrial;29.090-900;VALE;BR;5738805;Ponta de Tubarão;Sim;Avenida Dante Michelini;CNPJ Vale;Vitória;5500;Brasil;Vale S.A.
+33592510027192;Jardim América;29.140-135;VALE;BR;6443275;;Sim;Avenida Vale do Rio Doce;CNPJ Vale;Cariacica;280;Brasil;Vale S.A.
+33592510044950;Povoado de Jatobá;49.140-000;VALE;BR;6931906;;Sim;Rodovia SE-206, Km 22;CNPJ Vale;Barra dos Coqueiros;S/N;Brasil;Vale S.A.
+33592510007752;Palmares I;68.515-000;VALE;BR;7383868;;Sim;Estrada da Ferrovia;CNPJ Vale;Parauapebas;S/N;Brasil;Vale S.A. Depósito Fechado de Carvão e Níquel de Parauapebas
+33592510000154;Botafogo;22.250-145;VALE;BR;7505861;;Sim;Avenida Graça Aranha;CNPJ Vale;Rio de Janeiro;26;Brasil;Vale S.A.
+33592510004907;Garcia II;35.970-000;VALE;BR;8121835;;Sim;Rua Neide Ferreira de Lacerda;CNPJ Vale;Barão de Cocais;75;Brasil;Vale S.A. - Barão de Cocais
+33592510045174;Serra Leste;68.523-000;VALE;BR;9041301;;Sim;Área Serra Leste, Km 34;CNPJ Vale;Curionópolis;S/N;Brasil;Vale S.A.
+33592510013051;Serra dos Carajás;68.516-000;VALE;BR;9709171;Via Interna, Estrada do Manganês, Km 25;Sim;Estrada Raymundo Mascarenhas;CNPJ Vale;Parauapebas;S/N;Brasil;Vale S.A. Mina Manganês do Azul
+15144306000199;Água Comprida;43.700-000;VALE;BR;8384774;;Sim;Rodovia BR-324 Km 24;CNPJ Vale;Simões Filho;S/N;Brasil;Vale Manganês S.A.
+33592510021747;Distrito Industrial Simão da Cunha;33.040-900;VALE;BR;10606743;;Sim;Rodovia BR-381, Km 450;CNPJ Vale;Santa Luzia;S/N;Brasil;Vale S.A.
+33931478000275;Serra dos Carajás;68.508-970;VALE;BR;5472761;;Sim;Acampamento 3 Alfa - Floresta Nacional Tapirape-Aquiri;CNPJ Vale;Marabá;S/N;Brasil;Salobo Metais
+33592510008996;Mozartinópolis;68.537-000;VALE;BR;10826631;;Sim;Estrada Vicinal VP-12, Gleba Chicrim;CNPJ Vale;Canaã dos Carajás;S/N;Brasil;Vale S.A. Mina S11D
+15144306007959;Morro da Mina;36.400-001;VALE;BR;8083040;;Sim;Rua Duque de Caxias;CNPJ Vale;Conselheiro Lafaiete;S/N;Brasil;Vale Manganês S.A.
+72372998000409;Itaguaí;23.825-410;VALE;BR;74307;;Sim;Estrada da Ilha da Madeira;CNPJ Vale;Rio de Janeiro;S/N;Brasil;Companhia Portuária Baia de Sepetiba
+33417445000201;Zona Rural;34.000-001;VALE;BR;80290;;Sim;Fazenda Rio de Peixe;CNPJ Vale;Nova Lima;S/N;Brasil;Minerações Brasileiras Reunidas S.A. MBR
+33417445001798;Pico;35.450-000;VALE;BR;80328;;Sim;Fazenda Cata Branca;CNPJ Vale;Itabirito;S/N;Brasil;Minerações Brasileiras Reunidas S.A. MBR
+33592510023529;;35.969-000;VALE;BR;665147;;Sim;Estrada de Ferro Vitória-Minas, Km 596;CNPJ Vale;Catas Altas;S/N;Brasil;Vale S.A. Fazendão
+4660182000269;Zona Rural;35.940-000;VALE;BR;10346689;;Sim;Fazenda Mina de Morro Agudo;CNPJ Vale;Rio Piracicaba;S/N;Brasil;Baovale Mineração S.A.
+50567288000744;Campo Grande;22631005;SML;BR;;;Não;Estrada da Cachamorra;CNPJ Michelin;Rio de Janeiro;5000;Brasil;Sociedade Michelin de Participações Indust. e Comércio Ltda.
+39624465000159;Polo Empresarial Novo México;22631005;MES;BR;;Galpão F;Não;Rodovia Darly Santos;CNPJ Michelin;Vila Velha;2455;Brasil;Michelin Espírito Santo Com. Imp. Exp. Ltda.
+15144306006553;Zona Rural;22631005;VALE;BR;;;Não;Loc. Rancharia;CNPJ Vale;Ouro Preto;S/N;Brasil;Vale Manganês S.A.
+15144306008254;Zona Rural;22631005;VALE;BR;;;Não;Rodovia MG-457, Km 42;CNPJ Vale;Santa Rita de Jacutinga;S/N;Brasil;Vale Manganês S.A.
+15144306006987;Zona Rural;22631005;VALE;BR;;;Não;Rodovia BR-265, Km 8;CNPJ Vale;Barbacena;S/N;Brasil;Vale Manganês S.A.
+57012098000386;Polo Empresarial Novo México;29.104-360;Translute;BR;;Pavimento Térreo 01;Não;Rodovia Darly Santos;Transportadora;Vila Velha;2455;Brasil;Translute Transportes Rodoviários
