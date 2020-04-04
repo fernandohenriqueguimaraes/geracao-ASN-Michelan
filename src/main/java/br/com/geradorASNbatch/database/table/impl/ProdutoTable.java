@@ -4,9 +4,6 @@ import java.io.IOException;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
-
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -57,20 +54,6 @@ public class ProdutoTable implements BasicTable<Produto> {
 							+ produto.getAltura().toString() + ", " + produto.getLargura().toString() + ", "
 							+ produto.getComprimento().toString() + ")");
 		}
-	}
-
-	public static void showTableData() throws SQLException, IOException {
-
-		// query
-		ResultSet rs = ConexaoBDApacheDerby.getStatement().executeQuery("SELECT * FROM PRODUTO");
-
-		// print out query result
-		while (rs.next()) {
-			System.out.printf("%d\t%s\n", rs.getString("partNumber"), rs.getString("cai"), rs.getString("cad"),
-					rs.getString("modelo"), rs.getString("tipoProduto"), rs.getString("unidadeMedida"),
-					rs.getString("volume"), rs.getString("altura"), rs.getString("comprimento"));
-		}
-
 	}
 
 	private static ResultSet findProdutoByPartNumber(String partNumber) throws SQLException, IOException {

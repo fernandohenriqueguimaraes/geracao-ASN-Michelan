@@ -10,9 +10,6 @@ public interface BasicTable<T> {
 	public static void dropTable() throws SQLException {
 	}
 
-	public static void showTableData() throws SQLException {
-	}
-
 	static boolean checkIfTableExists() throws SQLException {
 		return true;
 	}

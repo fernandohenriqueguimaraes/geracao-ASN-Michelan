@@ -59,22 +59,6 @@ public class EmpresaTable implements BasicTable<Empresa> {
 		}
 	}
 
-	public static void showTableData() throws SQLException, IOException {
-
-		// query
-		ResultSet rs = ConexaoBDApacheDerby.getStatement().executeQuery("SELECT * FROM EMPRESA");
-
-		// print out query result
-		while (rs.next()) {
-			System.out.printf("%d\t%s\n", rs.getString("empresa"), rs.getString("bairro"), rs.getString("cep"),
-					rs.getString("logradouro"), rs.getString("numero"), rs.getString("complemento"),
-					rs.getString("municipio"), rs.getString("pais"), rs.getString("codigoPais"), rs.getString("tipo"),
-					rs.getString("razaoSocial"), rs.getString("codigoEmpresa"), rs.getString("codigoERP"),
-					rs.getString("geraASN"));
-		}
-
-	}
-
 	private static ResultSet findEmpresaByCnpj(String cnpj) throws SQLException, IOException {
 		
 		return ConexaoBDApacheDerby.getStatement().executeQuery("SELECT * FROM EMPRESA WHERE cnpj = '" + cnpj+ "'");

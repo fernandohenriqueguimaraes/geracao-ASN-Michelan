@@ -11,19 +11,18 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.com.geradorASNbatch.database.connection.ConexaoBDApacheDerby;
 import br.com.geradorASNbatch.database.table.impl.EmpresaTable;
 import br.com.geradorASNbatch.database.table.impl.ProdutoTable;
 
 @SpringBootApplication
-public class BatchProcessingApplication implements CommandLineRunner{
+public class BatchProcessingApplication implements CommandLineRunner {
 
-    @Autowired
-    JobLauncher jobLauncher;
-     
-    @Autowired
-    Job job;
-    
+	@Autowired
+	JobLauncher jobLauncher;
+
+	@Autowired
+	Job job;
+
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(BatchProcessingApplication.class, args);
 	}
@@ -31,16 +30,17 @@ public class BatchProcessingApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		try {
+
 			EmpresaTable.createTable();
 			ProdutoTable.createTable();
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-		JobParameters params = new JobParametersBuilder()
-                 .addString("JobID", String.valueOf(System.currentTimeMillis()))
-                 .toJobParameters();
+
+		JobParameters params = new JobParametersBuilder().addString("JobID", String.valueOf(System.currentTimeMillis()))
+				.toJobParameters();
 		jobLauncher.run(job, params);
-		
+
 	}
 }
