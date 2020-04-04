@@ -31,9 +31,6 @@ public class BatchProcessingApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		try {
-			ConexaoBDApacheDerby.connectionToDerby();
-			EmpresaTable.dropTable();
-			ProdutoTable.dropTable();
 			EmpresaTable.createTable();
 			ProdutoTable.createTable();
 		} catch (SQLException e) {

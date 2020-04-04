@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import br.com.geradorASNbatch.batch.task.ConsultarNFNimbi;
 import br.com.geradorASNbatch.batch.task.GerarTabelaEmpresaTask;
 import br.com.geradorASNbatch.batch.task.GerarTabelaProdutoTask;
 
@@ -34,9 +35,14 @@ public class BatchConfiguration {
 	}
 
 	@Bean
+	public Step consultarNFNimbi() {
+		return steps.get("consultarNFNimbi").tasklet(new ConsultarNFNimbi()).build();
+	}
+	
+	@Bean
 	public Job geracaoASNJob() {
-		return jobs.get("geracaoASNJob").start(gerarTabelaProduto())
-				.next(gerarTabelaEmpresa()).build();
+		return jobs.get("geracaoASNJob").incrementer(new RunIdIncrementer()).start(gerarTabelaProduto())
+				.next(gerarTabelaEmpresa()).next(consultarNFNimbi()).build();
 	}
 
 }

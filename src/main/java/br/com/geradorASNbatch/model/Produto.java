@@ -1,5 +1,7 @@
 package br.com.geradorASNbatch.model;
 
+import java.math.BigDecimal;
+
 public class Produto {
 
 	private String partNumber;
@@ -8,10 +10,10 @@ public class Produto {
 	private String modelo;
 	private String tipoProduto;
 	private String unidadeMedida;
-	private Double volume;
-	private Double altura;
-	private Double largura;
-	private Double comprimento;
+	private BigDecimal volume;
+	private BigDecimal altura;
+	private BigDecimal largura;
+	private BigDecimal comprimento;
 
 	public String getPartNumber() {
 		return partNumber;
@@ -49,38 +51,38 @@ public class Produto {
 		return this;
 	}
 
-	public Double getVolume() {
+	public BigDecimal getVolume() {
 		return volume;
 	}
 
-	public Produto setVolume(Double volume) {
+	public Produto setVolume(BigDecimal volume) {
 		this.volume = volume;
 		return this;
 	}
 
-	public Double getAltura() {
+	public BigDecimal getAltura() {
 		return altura;
 	}
 
-	public Produto setAltura(Double altura) {
+	public Produto setAltura(BigDecimal altura) {
 		this.altura = altura;
 		return this;
 	}
 
-	public Double getLargura() {
+	public BigDecimal getLargura() {
 		return largura;
 	}
 
-	public Produto setLargura(Double largura) {
+	public Produto setLargura(BigDecimal largura) {
 		this.largura = largura;
 		return this;
 	}
 
-	public Double getComprimento() {
+	public BigDecimal getComprimento() {
 		return comprimento;
 	}
 
-	public Produto setComprimento(Double comprimento) {
+	public Produto setComprimento(BigDecimal comprimento) {
 		this.comprimento = comprimento;
 		return this;
 	}

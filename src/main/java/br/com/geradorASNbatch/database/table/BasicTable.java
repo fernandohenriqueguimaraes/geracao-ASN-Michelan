@@ -1,5 +1,6 @@
 package br.com.geradorASNbatch.database.table;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 public interface BasicTable<T> {
@@ -16,5 +17,5 @@ public interface BasicTable<T> {
 		return true;
 	}
 
-	public void insertRow(T t) throws SQLException;
+	public void insertRow(T t) throws SQLException, IOException;
 }

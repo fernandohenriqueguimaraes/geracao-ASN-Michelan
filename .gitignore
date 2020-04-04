@@ -15,3 +15,6 @@ buildNumber.properties
 *.factorypath
 *.lck
 src/main/resources/geradorASNbatch/
+*.log
+*.gz
+*.json

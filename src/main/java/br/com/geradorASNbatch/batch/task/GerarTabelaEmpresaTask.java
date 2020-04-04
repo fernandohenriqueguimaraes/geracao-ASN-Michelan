@@ -1,5 +1,6 @@
 package br.com.geradorASNbatch.batch.task;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -16,17 +17,16 @@ import br.com.geradorASNbatch.model.Empresa;
 
 public class GerarTabelaEmpresaTask implements Tasklet {
 
-	private static final Logger log = LoggerFactory.getLogger(GerarTabelaEmpresaTask.class);
-
 	public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
 
 		List<Empresa> empresas = (new EmpresaExtractor()).extrairDadosCSV();
 		EmpresaTable table = new EmpresaTable();
 		empresas.forEach((empresa) -> {
-			log.info("Extraida do CSV: " + empresa.toString());
 			try {
 				table.insertRow(empresa);
 			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		});

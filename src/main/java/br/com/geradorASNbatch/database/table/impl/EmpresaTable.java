@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import br.com.geradorASNbatch.database.connection.ConexaoBDApacheDerby;
 
+import java.io.IOException;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import br.com.geradorASNbatch.database.table.BasicTable;
@@ -17,7 +18,7 @@ public class EmpresaTable implements BasicTable<Empresa> {
 
 	private static final Logger log = LoggerFactory.getLogger(EmpresaTable.class);
 
-	public static void createTable() throws SQLException {
+	public static void createTable() throws SQLException, IOException {
 
 		if (!checkIfTableExists()) {
 			log.info("Criando tabela EMPRESA no banco de dados Derby");
@@ -27,11 +28,11 @@ public class EmpresaTable implements BasicTable<Empresa> {
 							+ "complemento varchar(50)," + "municipio varchar(30)," + "pais varchar(20), "
 							+ "codigoPais varchar(4)," + "tipo varchar(20)," + "razaoSocial varchar(80),"
 							+ "codigoEmpresa varchar(10)," + "codigoERP varchar(10)," + "geraASN varchar(10))");
-			log.info("Finalizada a criação da tabela EMPRESA no banco de dados Derby");
 		}
 	}
 
-	public static void dropTable() throws SQLException {
+	public static void dropTable() throws SQLException, IOException {
+		
 		if (checkIfTableExists()) {
 			log.info("Deletando tabela EMPRESA no banco de dados Derby");
 			ConexaoBDApacheDerby.getStatement().executeUpdate("Drop Table EMPRESA");
@@ -39,18 +40,26 @@ public class EmpresaTable implements BasicTable<Empresa> {
 	}
 
 	@Override
-	public void insertRow(Empresa empresa) throws SQLException {
-		log.info("Inserindo no banco: " + empresa.toString());
-		ConexaoBDApacheDerby.getStatement().executeUpdate(
-				"INSERT INTO EMPRESA (cnpj, bairro, cep, logradouro, numero, complemento, municipio, pais, codigoPais, tipo, "
-				+ "razaoSocial, codigoEmpresa, codigoERP, geraASN) VALUES ('"+ empresa.getCnpj() + "', '" + empresa.getBairro() + "', "
-						+ "'" + empresa.getCep() + "', '" + empresa.getLogradouro() + "', '" + empresa.getNumero() + "', '" 
-						+ empresa.getComplemento() + "', '" + empresa.getMunicipio() + "', '" + empresa.getPais() + "', '" 
-						+ empresa.getCodigoPais() + "', '"+ empresa.getTipo() + "', '" + empresa.getRazaoSocial() + "', '"
-						+ empresa.getCodigoEmpresa() + "', '"+ empresa.getCodigoERP() + "', '" + empresa.geraASNtoString() + "')");
+	public void insertRow(Empresa empresa) throws SQLException, IOException {
+
+		ResultSet rs = findEmpresaByCnpj(empresa.getCnpj());
+
+		if (!rs.next()) {
+			log.info("Persistindo a EMPRESA: " + empresa.toString());
+			
+			ConexaoBDApacheDerby.getStatement().executeUpdate(
+					"INSERT INTO EMPRESA (cnpj, bairro, cep, logradouro, numero, complemento, municipio, pais, codigoPais, tipo, "
+							+ "razaoSocial, codigoEmpresa, codigoERP, geraASN) VALUES ('" + empresa.getCnpj() + "', '"
+							+ empresa.getBairro() + "', " + "'" + empresa.getCep() + "', '" + empresa.getLogradouro()
+							+ "', '" + empresa.getNumero() + "', '" + empresa.getComplemento() + "', '"
+							+ empresa.getMunicipio() + "', '" + empresa.getPais() + "', '" + empresa.getCodigoPais()
+							+ "', '" + empresa.getTipo() + "', '" + empresa.getRazaoSocial() + "', '"
+							+ empresa.getCodigoEmpresa() + "', '" + empresa.getCodigoERP() + "', '"
+							+ empresa.geraASNtoString() + "')");
+		}
 	}
 
-	public static void showTableData() throws SQLException {
+	public static void showTableData() throws SQLException, IOException {
 
 		// query
 		ResultSet rs = ConexaoBDApacheDerby.getStatement().executeQuery("SELECT * FROM EMPRESA");
@@ -66,7 +75,13 @@ public class EmpresaTable implements BasicTable<Empresa> {
 
 	}
 
-	private static boolean checkIfTableExists() throws SQLException {
+	private static ResultSet findEmpresaByCnpj(String cnpj) throws SQLException, IOException {
+		
+		return ConexaoBDApacheDerby.getStatement().executeQuery("SELECT * FROM EMPRESA WHERE cnpj = '" + cnpj+ "'");
+		
+	}
+
+	private static boolean checkIfTableExists() throws SQLException, IOException {
 		DatabaseMetaData dbm = ConexaoBDApacheDerby.getConnection().getMetaData();
 		ResultSet rs = dbm.getTables(null, null, "EMPRESA", null);
 
